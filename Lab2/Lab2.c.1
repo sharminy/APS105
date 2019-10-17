@@ -1,0 +1,244 @@
+#include <stdio.h>
+#include <math.h>
+int main(void)
+{
+	char colourOne, colourTwo, multiBand, tolBand; //Declaring variables
+	double firstBand=0.0; //Initializing all real number variables
+	double secondBand=0.0;
+	double mult=0.0; 
+	double tol=0.0;
+	double newResistance=0.0; 
+	
+	printf("Please enter the 1st band:\n"); //User Input four colours
+	scanf(" %c",&colourOne);
+	printf("Please enter the 2nd band:\n");
+	scanf(" %c",&colourTwo);
+	printf("Please enter the multiplier band:\n");
+	scanf(" %c",&multiBand);
+	printf("Please enter the tolerance band:\n");
+	scanf(" %c",&tolBand);
+	
+	 
+//First Colour storing first band value
+
+	if (colourOne == 'k' || colourOne == 'K')
+	{
+		firstBand=0;
+		printf("Resistor bands: Black");
+	}
+	else if (colourOne == 'b' || colourOne == 'B')
+	{
+		firstBand=1;
+		printf("Resistor bands: Brown");
+	}
+	else if (colourOne == 'r' || colourOne == 'R')
+	{
+		firstBand=2;
+		printf("Resistor bands: Red");
+	}
+	else if (colourOne == 'o' || colourOne == 'O')
+	{
+		firstBand=3;
+		printf("Resistor bands: Orange");
+	}
+	else if (colourOne == 'e' || colourOne == 'E')
+	{
+		firstBand=4;
+		printf("Resistor bands: Yellow");
+	}
+	else if (colourOne == 'g' || colourOne == 'G')
+	{
+		firstBand=5;
+		printf("Resistor bands: Green");
+	}
+	else if (colourOne == 'u' || colourOne == 'U')
+	{
+		firstBand=6;
+		printf("Resistor bands: Blue");
+	}
+	else if (colourOne == 'v' || colourOne == 'V')
+	{
+		firstBand=7;
+		printf("Resistor bands: Violet");
+	}
+	else if (colourOne == 'y' || colourOne == 'Y')
+	{
+		firstBand=8;
+		printf("Resistor bands: Grey");
+	}
+	else 
+	{
+		firstBand=9;
+		printf("Resistor bands: White");
+	}
+
+//Second colour storing second band value	
+
+	if (colourTwo == 'k' || colourTwo == 'K')
+	{
+		secondBand=0;
+		printf(" Black ");
+	}
+	else if (colourTwo == 'b' || colourTwo == 'B')
+	{
+		secondBand=1;
+		printf(" Brown ");
+	}
+	else if (colourTwo == 'r' || colourTwo == 'R')
+	{
+		secondBand=2;
+		printf(" Red ");
+	}
+	else if (colourTwo == 'o' || colourTwo == 'O')
+	{
+		secondBand=3;
+		printf(" Orange ");
+	}
+	else if (colourTwo == 'e' || colourTwo == 'E')
+	{
+		secondBand=4;
+		printf(" Yellow ");
+	}
+	else if (colourTwo == 'g' || colourTwo == 'G')
+	{
+		secondBand=5;
+		printf(" Green ");
+	}
+	else if (colourTwo == 'u' || colourTwo == 'U')
+	{
+		secondBand=6;
+		printf(" Blue ");
+	}
+	else if (colourTwo == 'v' || colourTwo == 'V')
+	{
+		secondBand=7;
+		printf(" Violet ");
+	}
+	else if (colourTwo == 'y' || colourTwo == 'Y')
+	{
+		secondBand=8;
+		printf(" Grey ");
+	}
+	else
+	{
+		secondBand=9;
+		printf(" White ");
+	}
+
+//Third Colour Storing the multiplier
+	
+	if (multiBand == 'k' || multiBand == 'K')
+	{
+		mult=1;
+		printf("Black");
+	}
+	else if (multiBand == 'b' || multiBand == 'B')
+	{
+		mult=10;
+		printf("Brown");
+	}
+	else if (multiBand == 'r' || colourTwo == 'R')
+	{
+		mult=100;
+		printf("Red");
+	}
+	else if (multiBand == 'o' || multiBand == 'O')
+	{
+		mult=1000;
+		printf("Orange");
+	}
+	else if (multiBand == 'e' || multiBand == 'E')
+	{
+		mult=10000;
+		printf("Yellow");
+	}
+	else if (multiBand == 'g' || multiBand == 'G')
+	{
+		mult=100000;
+		printf("Green");
+	}
+	else if (multiBand == 'u' || multiBand == 'U')
+	{
+		mult=1000000;
+		printf("Blue");
+	}
+	else if (multiBand == 'v' || multiBand == 'V')
+	{
+		mult=10000000;
+		printf("Violet");
+	}
+	
+	else if (multiBand == 'l' || multiBand == 'L')
+	{
+		mult=0.1;
+		printf("Gold");
+	}
+	else 
+	{
+		mult=0.01;
+		printf("Silver");
+	}
+
+//Fourth colour, storing tolerance band values
+
+	if (tolBand == 'b' || tolBand == 'B')
+	{
+		tol=1;
+		printf(" Brown");
+	}
+	else if (tolBand == 'r' || tolBand == 'R')
+	{
+		tol=2;
+		printf(" Red");
+	}
+	
+	else if (tolBand == 'g' || tolBand == 'G')
+	{
+		tol=0.5;
+		printf(" Green");
+	}
+	else if (tolBand == 'u' || tolBand == 'U')
+	{
+		tol=0.25;
+		printf(" Blue");
+	}
+	else if (tolBand == 'v' || tolBand == 'V')
+	{
+		tol=0.10;
+		printf(" Violet");
+	}
+	else if (tolBand == 'y' || tolBand == 'Y')
+	{
+		tol=0.05;
+		printf(" Grey");
+	}
+	else if (tolBand == 'l' || tolBand == 'L')
+	{
+		tol=5;
+		printf(" Gold");
+	}
+	else 
+	{
+		tol=10;
+		printf(" Silver");
+	}
+	
+	double resistance = ((firstBand*10+secondBand)*(mult)); //Resistance Calculation
+	printf("\n");
+
+//Display resistance according to units
+
+	if (resistance > 0 && resistance <1000)
+	printf("Resistance: %.2lf Ohms +/- %.2\lf%% \n", resistance,tol);
+	
+	else if (resistance>1000 && resistance<1000000)
+	{
+		newResistance=resistance/1000;
+		printf("Resistance: %.2lf KOhms +/- %.2lf%% \n",newResistance,tol);
+	}
+	else 
+	{	newResistance=resistance/1000000;
+		printf("Resistance: %.2lf MOhms +/- %.2lf%% \n",newResistance,tol);
+	}
+return 0;
+} 
